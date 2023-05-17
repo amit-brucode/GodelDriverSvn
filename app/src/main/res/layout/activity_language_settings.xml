@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RefineCode.RefineActivities.LanguageSettings">
+    <include layout="@layout/toolbar" />
+
+
+    <!--<LinearLayout-->
+
+        <!--android:id="@+id/ll_default"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_default"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/dimen_20"-->
+            <!--android:text="@string/languageDefault"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_.5"-->
+        <!--android:layout_marginTop="@dimen/dimen_5"-->
+        <!--android:background="@color/darkGrey" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_swahili"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_swahili"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/dimen_20"-->
+            <!--android:text="@string/languageSwahili"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_.5"-->
+        <!--android:layout_marginTop="@dimen/dimen_5"-->
+        <!--android:background="@color/darkGrey" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_english"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_english"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/dimen_20"-->
+            <!--android:text="@string/languageEnglish"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_.5"-->
+        <!--android:layout_marginTop="@dimen/dimen_5"-->
+        <!--android:background="@color/darkGrey" />-->
+
+
+    <RadioGroup
+        android:id="@+id/rg_language_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/ll_default"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:buttonTint="@color/colorPrimary"-->
+            <!--android:checked="true"-->
+            <!--android:text="@string/languageDefault"-->
+            <!--android:textSize="14sp"-->
+            <!--android:visibility="visible"/>-->
+
+        <RadioButton
+            android:id="@+id/ll_swahili"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:checked="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="@string/languageSwahili"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/ll_english"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="@string/languageEnglish"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

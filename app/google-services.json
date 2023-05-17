@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "265147547214",
+    "firebase_url": "https://godel-2017.firebaseio.com",
+    "project_id": "godel-2017",
+    "storage_bucket": "godel-2017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265147547214:android:9393621cfe3b17e5",
+        "android_client_info": {
+          "package_name": "com.driver.godel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265147547214-p3oqurtltl62lroqt8fr90bhcttp1sq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.driver.godel",
+            "certificate_hash": "fe21ed57e8cfed5b2101c2a99fb82ebe601f4d43"
+          }
+        },
+        {
+          "client_id": "265147547214-cd7e84svrf2p9tfcah90cs0th9idbalj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.driver.godel",
+            "certificate_hash": "0e5c7efd304dfebfb2b01c5f14ce390d3d928c9d"
+          }
+        },
+        {
+          "client_id": "265147547214-4llhpordlv1r1i6fkidht587lb08pd7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPOuBOlvd-Kl84w6f0B3WdWP5JIo4AX80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265147547214-e6q001qsu47ld91f8rhs9jpr6viqouq1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brucode.Godel"
+              }
+            },
+            {
+              "client_id": "265147547214-4llhpordlv1r1i6fkidht587lb08pd7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265147547214:android:8f1fb42157e18625",
+        "android_client_info": {
+          "package_name": "com.godel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265147547214-n2rdsnqbf7ftkmdo7covg2gfnbjm29ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.godel",
+            "certificate_hash": "fe21ed57e8cfed5b2101c2a99fb82ebe601f4d43"
+          }
+        },
+        {
+          "client_id": "265147547214-3bife9qbuhhgshe08a94taua2msaelq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.godel",
+            "certificate_hash": "346e5c390e597fc1f78f63446353c9b08c510856"
+          }
+        },
+        {
+          "client_id": "265147547214-4llhpordlv1r1i6fkidht587lb08pd7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPOuBOlvd-Kl84w6f0B3WdWP5JIo4AX80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265147547214-e6q001qsu47ld91f8rhs9jpr6viqouq1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brucode.Godel"
+              }
+            },
+            {
+              "client_id": "265147547214-4llhpordlv1r1i6fkidht587lb08pd7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

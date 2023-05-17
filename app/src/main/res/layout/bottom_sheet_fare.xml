@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_fare"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    android:padding="@dimen/activity_vertical_margin"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="200dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/bottomSheetHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:text="Total Fare"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/tv_total_fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:layout_below="@id/bottomSheetHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Rs. 250/-"
+        android:textSize="@dimen/font_larger"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/font_larger"
+        android:gravity="center"
+        android:text="Ok"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

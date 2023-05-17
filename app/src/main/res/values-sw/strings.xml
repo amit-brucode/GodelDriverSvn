@@ -1,0 +1,582 @@
+<!--<resources>-->
+    <!--<string name="app_name">Godel Driver</string>-->
+    <!--<string name="action_settings">Settings</string>-->
+
+
+    <!--&lt;!&ndash; Forgot Password Dialog &ndash;&gt;-->
+    <!--<string name="tv_title">Forgot Password</string>-->
+    <!--<string name="btn_text">Submit</string>-->
+
+    <!--&lt;!&ndash; Account Activity &ndash;&gt;-->
+    <!--<string name="mobile_number">98545245645</string>-->
+    <!--<string name="booking_history">Booking History</string>-->
+    <!--<string name="notification">Notifications</string>-->
+    <!--<string name="help">Help</string>-->
+    <!--<string name="terms_conditions">Terms &amp; Conditions</string>-->
+    <!--<string name="privacy_policy">Privacy Policy</string>-->
+    <!--<string name="about_us">About Us</string>-->
+    <!--<string name="tv_driver_name">Driver Name</string>-->
+    <!--<string name="title_activity_maps">Map</string>-->
+
+    <!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <!--&lt;!&ndash; Rs.&ndash;&gt;-->
+    <!--<string name="rs">\u20B9</string>-->
+    <!--<string name="dollar">&#36;</string>-->
+
+    <!--<string name="double_quote">\"</string>-->
+
+
+    <!--<string name="drawer_opened">Open</string>-->
+    <!--<string name="drawer_closed">Close</string>-->
+
+
+    <!--<string name="title_activity_maps123">Map</string>-->
+    <!--<string name="NoInternet">No internet connection</string>-->
+    <!--<string name="NoLocation">Make sure your location is activated.</string>-->
+
+
+    <!--<string-array name="contriesName">-->
+        <!--<item>Select Country</item>-->
+        <!--<item>Tanzania</item>-->
+        <!--<item>Uganda</item>-->
+
+    <!--</string-array>-->
+
+
+    <!--&lt;!&ndash;MultilanguageSupport&ndash;&gt;-->
+    <!--&lt;!&ndash;- SignIn Screen &ndash;&gt;-->
+
+    <!--<string name="alreadyamember">Already a member? Login here</string>-->
+    <!--<string name="email_hint">Email Address</string>-->
+    <!--<string name="password_hint">Password</string>-->
+    <!--<string name="forget_password">Forgot Password ?</string>-->
+    <!--<string name="button_signin">Login</string>-->
+    <!--<string name="phone_hint">Phone Number</string>-->
+    <!--<string name="err_msg_email">Email required</string>-->
+    <!--<string name="err_msg_password">Password required</string>-->
+    <!--<string name="err_msg_password_min_length">Password required min 6 chars</string>-->
+    <!--<string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>-->
+    <!--<string name="retrytext">Retry </string>-->
+    <!--<string name="signindialog">SignIn </string>-->
+    <!--<string name="ongoingtext">On Going </string>-->
+    <!--<string name="pickuptext">Pickup </string>-->
+    <!--<string name="deliverytext">Delivery </string>-->
+    <!--<string name="onlinetext">Online </string>-->
+    <!--<string name="offlinetext">Offline </string>-->
+    <!--<string name="pleasetryagain">Please try again </string>-->
+    <!--<string name="oktext">OK </string>-->
+    <!--<string name="canceltextt">Cancel </string>-->
+    <!--<string name="godeldrivertitle">Godel Driver </string>-->
+    <!--<string name="connectingtext">Connecting </string>-->
+    <!--<string name="packagepaymentisincomplete">Package payment is incomplete, please pay before proceed. </string>-->
+    <!--<string name="offlineconfirmation">Offline confirmation </string>-->
+    <!--<string name="reallywantoffline">Really want to go offline ? </string>-->
+    <!--<string name="yestext">Yes </string>-->
+    <!--<string name="wanttologout">Are you want to Logout? </string>-->
+    <!--<string name="logouttext">Logout </string>-->
+    <!--<string name="assigningstickertext">assigning sticker </string>-->
+    <!--<string name="loadingtext">Loading </string>-->
+    <!--<string name="gettingdetailsdialog">Getting details </string>-->
+    <!--<string name="accountisloginanotherr">This account is login in another device </string>-->
+    <!--<string name="closeapptext">Close app </string>-->
+
+    <!--&lt;!&ndash;OnGoingFragment&ndash;&gt;-->
+    <!--<string name="no_request_ongoing">Currently no ongoing request, you can accept from pickup and delivery tab</string>-->
+    <!--<string name="packageidtext">Package ID</string>-->
+    <!--<string name="packagedetailstext">Package Details</string>-->
+    <!--<string name="length">Length</string>-->
+    <!--<string name="width">Width</string>-->
+    <!--<string name="depth">Depth</string>-->
+    <!--<string name="weight">Weight</string>-->
+    <!--<string name="quantity">Quantity</string>-->
+    <!--<string name="estvalue">Est. Value</string>-->
+    <!--<string name="addressnotes">Address Notes</string>-->
+    <!--<string name="pickupnotecolon">Pickup Note :</string>-->
+    <!--<string name="nonoteavailable">No note available</string>-->
+    <!--<string name="deliverynotecolon">Delivery Note :</string>-->
+    <!--<string name="viewmoretext">View more</string>-->
+    <!--<string name="pickupanddelivery">Pickup and Delivery Timing</string>-->
+    <!--<string name="pickupcolonn">Pickup :</string>-->
+    <!--<string name="deliverycolonn">Delivery:</string>-->
+    <!--<string name="recurringpickuypanddelivery">Recurring Pickup and Delivery Timing</string>-->
+    <!--<string name="recurringtypecolonn">Recurring Type:</string>-->
+    <!--<string name="pickuptimecolon">Pickup Timing:</string>-->
+    <!--<string name="deliverytimecolon">Delivery:</string>-->
+    <!--<string name="customerdetails">Customer Details</string>-->
+    <!--<string name="namecolonn">Name:</string>-->
+    <!--<string name="emailcolon">Email:</string>-->
+    <!--<string name="phonecolon">Phone:</string>-->
+    <!--<string name="packageisalreadycompleted">Package is already completed</string>-->
+    <!--<string name="pickuppackage">Pickup Package</string>-->
+    <!--<string name="scanpackagelabel">Scan Package Label</string>-->
+    <!--<string name="scanattachsticker">Scan/Attach Sticker</string>-->
+    <!--<string name="scandelivery">SCAN FOR DELIVERY</string>-->
+    <!--<string name="scantext">Scan</string>-->
+    <!--<string name="dropofftext">Drop Off</string>-->
+    <!--<string name="navigationtext">Navigation</string>-->
+    <!--<string name="waitingtext">Waiting</string>-->
+    <!--<string name="pickup_complete">" Picked up \n Completed"</string>-->
+    <!--<string name="dropoff_complete">" Drop off \n Completed"</string>-->
+    <!--<string name="scanpackagewarehouse">Scan package at the warehouse</string>-->
+    <!--<string name="nopickupaddressnote">No pickup address note found</string>-->
+    <!--<string name="nodeliveryaddressnote">No delivery address note found</string>-->
+    <!--<string name="dailytext">Daily</string>-->
+    <!--<string name="weeklytext">Weekly</string>-->
+    <!--<string name="monthlytext">Monthly</string>-->
+    <!--<string name="morningtext">Morning</string>-->
+    <!--<string name="eveningtext">Evening</string>-->
+    <!--<string name="loadingpackages">Loading Packages</string>-->
+    <!--<string name="bookingidcolon">BOOKING ID:</string>-->
+    <!--<string name="statuscolon">Status :</string>-->
+    <!--<string name="completedtextt">Completed</string>-->
+    <!--<string name="usernametext">User Name</string>-->
+    <!--<string name="addressnotecap">ADDRESS NOTE</string>-->
+    <!--<string name="dropoffnotecolon">Dropoff Note :</string>-->
+    <!--<string name="bookingtimecap">BOOKING TIMING</string>-->
+    <!--<string name="recurringdetails">RECURRING DETAILS</string>-->
+    <!--<string name="lengthcolon">Length:</string>-->
+    <!--<string name="widthcolon">Width:</string>-->
+    <!--<string name="depthcolon">Depth:</string>-->
+    <!--<string name="weightcolon">Weight:</string>-->
+    <!--<string name="quantitycolon">Quantity:</string>-->
+    <!--<string name="estvaluecolon">Est. value:</string>-->
+    <!--<string name="customerdetailscap">CUSTOMER DETAILS</string>-->
+    <!--<string name="idcolon">ID:</string>-->
+    <!--<string name="mobilenumbercolon">Mobile Number:</string>-->
+    <!--<string name="acceptedtext">Accepted T</string>-->
+    <!--<string name="pendingtext">Pending</string>-->
+    <!--<string name="assignedtext">Assigned</string>-->
+    <!--<string name="arrivingtext">Arriving</string>-->
+    <!--<string name="arrivedtext">Arrived</string>-->
+
+    <!--<string name="starttext">Start</string>-->
+    <!--<string name="inprogresstext">In Progress</string>-->
+
+
+    <!--<string name="waitingbeforetext">Waiting before delivery</string>-->
+    <!--<string name="warehousetext">In warehouse</string>-->
+    <!--<string name="rejectedtext">Rejected</string>-->
+    <!--<string name="deliveryfailuretext">Delv. Failure</string>-->
+    <!--<string name="packagealreadysetongoing">Package already set as OnGoing package</string>-->
+    <!--<string name="calculatingfinaslfare">Calculating final fare</string>-->
+    <!--<string name="documentetxt">Document</string>-->
+    <!--<string name="othertext">other</string>-->
+    <!--<string name="cardpayment">Card</string>-->
+    <!--<string name="walletpayment">Wallet</string>-->
+    <!--<string name="bookingtimingstext">BOOKING TIMINGS</string>-->
+    <!--<string name="checkroutebutton">Check Route</string>-->
+    <!--<string name="bookingidsmalll">Booking Id:</string>-->
+    <!--<string name="packagedetailscap">PACKAGE DETAILS</string>-->
+    <!--<string name="packagetypedocother">Package Type(Document/Other) :</string>-->
+    <!--<string name="paymentdetailscap">PAYMENT DETAILS</string>-->
+    <!--<string name="amountcolon">Amount :</string>-->
+    <!--<string name="methodcolon">Method :</string>-->
+    <!--<string name="signedbycapp">SIGNED BY</string>-->
+    <!--<string name="namewithout">Name:</string>-->
+    <!--<string name="doyouwanttochangepassword">Do you want to change your password? :</string>-->
+    <!--<string name="securityenteroldpassword">For security please enter your old password</string>-->
+    <!--<string name="enteroldpassword">Enter old password</string>-->
+    <!--<string name="newpasswordhint">New password</string>-->
+    <!--<string name="confirmpasswordhint">Confirm password</string>-->
+    <!--<string name="verifybutton">Verify</string>-->
+    <!--<string name="updatepasswordbutton">Update Password</string>-->
+    <!--<string name="changepasswordsmall">Change Password</string>-->
+    <!--<string name="enternewpasswordtext">Enter new password</string>-->
+    <!--<string name="oldpasswordrequirerror">Old password required</string>-->
+    <!--<string name="mincharactersrequired">Min 6 characters required</string>-->
+    <!--<string name="wrongpassworderror">Wrong password</string>-->
+    <!--<string name="newpassworderror">New password required</string>-->
+    <!--<string name="newpassworddifferent">New password must be different</string>-->
+    <!--<string name="confirmpasswordrequirerror">Confirm password required</string>-->
+    <!--<string name="confirmpasswordincorrecterror">Confirm password incorrect</string>-->
+    <!--<string name="resettingpassworddialog">Resetting Password</string>-->
+    <!--<string name="passwordchangeddialog">Password Changed</string>-->
+    <!--<string name="passwordrequiredfurther">Permission required to proceed further</string>-->
+    <!--<string name="allowpemissionstext">Allow permissions</string>-->
+    <!--<string name="exitext">Exit</string>-->
+    <!--<string name="pleasewritedowntext">Please write down the reason</string>-->
+    <!--<string name="captureimagebutton">Capture Image</string>-->
+    <!--<string name="dropofffailuretext">Drop Off Failure</string>-->
+    <!--<string name="reasonrequirederror">Reason required</string>-->
+    <!--<string name="wouldyouliketoproceed">Would you really want to proceed without proof of failure image ?</string>-->
+    <!--<string name="notext">No</string>-->
+    <!--<string name="proceesingdialog">Processing</string>-->
+    <!--<string name="wouldyouliketoreplace">Would you like to continue with same package or replace package?</string>-->
+    <!--<string name="replacetext">Replace</string>-->
+    <!--<string name="forgotyourpassword">Forgot your Password?</string>-->
+    <!--<string name="enteryouremailaddress">Enter your email address below and click on the reset password button</string>-->
+    <!--<string name="enterverificationcode">Enter verification code</string>-->
+    <!--<string name="retypepasswordcode">Retype password</string>-->
+    <!--<string name="resetpasswordtext">Reset Password</string>-->
+    <!--<string name="doyouwanttobacklogin">Do you want to back to LOGIN? </string>-->
+    <!--<string name="passwordchangedlogin">Your password has been successfully updated. You can login with your new passsword.</string>-->
+    <!--<string name="passwordresetsuccessfully">Password Reset Successfully</string>-->
+    <!--<string name="sendingresetlinktextt">sending reset link</string>-->
+    <!--<string name="changepasswordemailsentemail">Change password email has been sent to your email id successfully</string>-->
+    <!--<string name="enterconfirmpassworderror">Enter confirm password</string>-->
+    <!--<string name="passwordshouldmatcherror">Password should match</string>-->
+    <!--<string name="faredetailscolon">FARE DETAILS</string>-->
+    <!--<string name="nofaredetailsavailaible">No fare details available</string>-->
+    <!--<string name="journeyfarecolon">Journey fare:</string>-->
+    <!--<string name="fareadjustmentcolon">Fare Adjustment:</string>-->
+    <!--<string name="newjourneyfarecolon">New Journey Fare:</string>-->
+    <!--<string name="finalfarecolon">Final Fare: </string>-->
+    <!--<string name="advancetext">Advance : </string>-->
+    <!--<string name="vattext">Vat (18%) </string>-->
+    <!--<string name="ucctext">UCC Levy(2%): </string>-->
+    <!--<string name="totalcolon">Total:  </string>-->
+    <!--<string name="paidamountcolon">Paid Amount:  </string>-->
+    <!--<string name="pendingamountcolon">Pending Amount:  </string>-->
+    <!--<string name="customercontactdetailstext">CUSTOMER CONTACT DETAILS </string>-->
+    <!--<string name="dropoffcompletebutton">Drop off Complete </string>-->
+    <!--<string name="completepickupbutton">Complete Pickup </string>-->
+    <!--<string name="dropoffwarehousebutton">Drop off WareHouse </string>-->
+    <!--<string name="cancelpackagebutton">Cancel Package </string>-->
+    <!--<string name="collectcashtext">Collect cash </string>-->
+    <!--<string name="wanttocaptureproofimage">Want to capture proof image of pickup? </string>-->
+    <!--<string name="updatingpackagedialog">Updating package </string>-->
+    <!--<string name="cancelrequestdialog">Cancel Request </string>-->
+    <!--<string name="gettingpackagedetailsdialog">Getting package details </string>-->
+    <!--<string name="pleaseretrytext">Please Retry </string>-->
+    <!--<string name="mytripstext">My Trips </string>-->
+    <!--<string name="downloadedlabelstitle">Downloaded Labels</string>-->
+    <!--<string name="nolabelsfoundtext">No Labels Found</string>-->
+    <!--<string name="signedbysmall">Signed by</string>-->
+    <!--<string name="namewithoutcolon">Name</string>-->
+    <!--<string name="pleasesigninhere">Please sign here</string>-->
+    <!--<string name="clearbutton">clear</string>-->
+    <!--<string name="savebutton">Save</string>-->
+    <!--<string name="signaturetitle">Signature</string>-->
+    <!--<string name="termsandconconditions">Terms &amp; Conditions</string>-->
+    <!--<string name="firstnametext">First Name</string>-->
+    <!--<string name="lastnametext">Last Name</string>-->
+    <!--<string name="numbertext">Number</string>-->
+    <!--<string name="emailwithout">Email</string>-->
+    <!--<string name="vehiclenumvertext">Vehicle Number</string>-->
+    <!--<string name="vehiclenametext">Vehicle Name</string>-->
+    <!--<string name="vehicletypetext">Vehicle Type</string>-->
+    <!--<string name="savechangesbutton">SAVE CHANGES</string>-->
+    <!--<string name="myaccounttitle">My Account</string>-->
+    <!--<string name="chooseanactiondialog">Choose an action</string>-->
+    <!--<string name="namerequirederror">Name required</string>-->
+    <!--<string name="entervalidemailerror">Please enter valid email</string>-->
+    <!--<string name="pleaseenterpassworderror">Please enter password</string>-->
+    <!--<string name="enterpasswordmin">Please enter password min 6 ch</string>-->
+    <!--<string name="entermobilenumbererror">Please enter mobile number</string>-->
+    <!--<string name="oldpasswordnotmatcherror">old password not matched</string>-->
+    <!--<string name="confirmpasswordnotmatched">confirm password not matched</string>-->
+    <!--<string name="doyourealluwantto">Do you really want to proceed with</string>-->
+    <!--<string name="invalidemail">invalid email</string>-->
+    <!--<string name="forgotyourtext">Forgot your</string>-->
+    <!--<string name="passwordquestion">Password? </string>-->
+    <!--<string name="backtextlogin">Do you want to go back to</string>-->
+    <!--<string name="loginquestion">LOGIN?</string>-->
+    <!--<string name="alreadywaywarehouse">You are already on the way to warehouse, You can pick this package to warehouse along with current process.</string>-->
+    <!--<string name="alreadyongoingpackage">There is already ongoing package, Would you like to select this package as ongoing? </string>-->
+    <!--<string name="warehousedroppackage">You are already on the way to warehouse, You can drop this package to warehouse along with current process. </string>-->
+    <!--<string name="startpackagedialog">Do you want to start this package? </string>-->
+    <!--<string  name="default_notification_channel_id">my_channel_01</string>-->
+
+    <!--<string name="currencysymbol"> UGX </string>-->
+    <!--<string name="cancereasontext"> Cancel Reason:  </string>-->
+
+
+<!--</resources>-->
+
+<resources>
+    <string name="app_name">Godel Driver</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Forgot Password Dialog -->
+    <string name="btn_text">Submit</string>
+
+    <!-- Account Activity -->
+    <string name="mobile_number">98545245645</string>
+    <string name="booking_history">Booking History</string>
+    <string name="notification">Notifications</string>
+    <string name="help">Help</string>
+    <string name="terms_conditions">Vigezo na masharti</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_us">About Us</string>
+    <string name="tv_driver_name">Driver Name</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Rs.-->
+    <string name="rs">\u20B9</string>
+    <string name="dollar">&#36;</string>
+
+    <string name="double_quote">\"</string>
+
+    <string name="drawer_opened">Open</string>
+    <string name="drawer_closed">Close</string>
+
+    <string name="title_activity_maps123">Map</string>
+    <string name="NoInternet">No internet connection</string>
+    <string name="NoLocation">Make sure your location is activated.</string>
+
+    <string-array name="contriesName">
+        <item>Select Country</item>
+        <item>Tanzania</item>
+        <item>Uganda</item>
+
+    </string-array>
+
+    <!--MultilanguageSupport-->
+    <!--- SignIn Screen -->
+
+    <string name="yestext">NDIO </string>
+    <string name="logouttext">Toka </string>
+    <string name="oktext">Sawa </string>
+    <string name="canceltextt">BATILISHA </string>
+    <string name="ongoingtext">Inaendelea </string>
+    <string name="pickuptext">Pakia </string>
+    <string name="deliverytext">Wasilisha </string>
+    <string name="err_msg_email">barua pepe Inahitajika</string>
+    <string name="err_msg_password">Neno siri </string>
+    <string name="err_msg_password_min_length">Neno siri linapaswa kuwa angalau herufi 6</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!--OnGoingFragment-->
+    <string name="no_request_ongoing">Kwa sasa hakuna maombi, unaweza kupokea kutoka kwenye tabo ya kupakia na kuwasilisha</string>
+    <string name="packageidtext">utambulisho wa kifurushi</string>
+    <string name="email_hint">anwani ya barua pepe</string>
+    <string name="password_hint">Nenosiri</string>
+    <string name="forget_password">Nimesahau nenosiri ?</string>
+    <string name="button_signin">Ingia</string>
+    <string name="length">urefu</string>
+    <string name="width">upana</string>
+    <string name="depth">kina</string>
+    <string name="weight">uzito</string>
+    <string name="quantity">idadi</string>
+    <string name="estvalue">makadirio ya thamani</string>
+    <string name="lengthcolon">urefu :</string>
+    <string name="widthcolon">upana :</string>
+    <string name="depthcolon">kina :</string>
+    <string name="weightcolon">uzito :</string>
+    <string name="tv_title">Umesahau nenosiri lako</string>
+    <string name="quantitycolon">idadi :</string>
+    <string name="estvaluecolon">thamani : </string>
+    <string name="pickupanddelivery">muda wa kupakia na kuwasilisha</string>
+    <string name="pickupcolonn">Pakia :</string>
+    <string name="deliverycolonn">Wasilisha :</string>
+    <string name="bookingtypecolonn">Booking Type :</string>
+    <string name="deliverytimecolon">Wasilisha :</string>
+    <string name="customerdetails">TAARIFA ZA MTEJA</string>
+    <string name="namecolonn">wateja Jina :</string>
+    <string name="emailcolon">Barua pepe :</string>
+    <string name="phonecolon">Nambari ya simu :</string>
+    <string name="scanpackagelabel">Skani lebo ya kifurushi</string>
+    <string name="scanattachsticker">Skani/ bandika stika</string>
+    <string name="scandelivery">SKANI KWA AJILI YA KUWASILISHA</string>
+    <string name="scanpackagewarehouse">kani kifurushi kwenye stoo</string>
+    <string name="addressnotecap">dokezo la anwani</string>
+    <string name="recurringdetails">maelezo yanayojirudia</string>
+    <string name="customerdetailscap">TAARIFA ZA MTEJA</string>
+    <string name="bookingtimingstext">Muda wa oda</string>
+
+    <string name="packagedetailscap">Maelezo ya kifurushi</string>
+    <string name="signedbycapp">Imesainiwa na</string>
+    <string name="doyouwanttochangepassword">Je, unataka kubadili nenosiri lako? :</string>
+    <string name="namewithout">Jina :</string>
+    <string name="exitext">Ondoka</string>
+    <string name="securityenteroldpassword">Kwa ajili ya usalama, tafadhali ingiza nenosiri la zamani</string>
+    <string name="enteroldpassword">Nenosiri la zamani linahitajika</string>
+    <string name="newpasswordhint">Ingiza neno siri jipya</string>
+    <string name="confirmpasswordhint">Thibitisha nenosiri</string>
+    <string name="verifybutton">HAKIKISHA</string>
+    <string name="updatepasswordbutton">Sasaisha nenosiri</string>
+    <string name="changepasswordsmall">Badili nenosiri</string>
+    <string name="enternewpasswordtext">Ingiza neno siri jipya</string>
+    <string name="oldpasswordrequirerror">Nenosiri la zamani linahitajika</string>
+    <string name="pleasewritedowntext">Tafadhali andika sababu</string>
+    <string name="dropofffailuretext">Kushindikana kupakua</string>
+    <string name="reasonrequirederror">sababu inahitajika</string>
+    <string name="wouldyouliketoproceed">Je, unapenda kuendelea bila picha ya uthibitisho wa kushindikana kwa kupakua?</string>
+    <string name="notext">HAPANA</string>
+    <string name="wouldyouliketoreplace">Je, ungependa kuendelea na kifurushi hicho ama kubadili kifurushi</string>
+    <string name="forgotyourpassword">Umesahau nenosiri lako?</string>
+    <string name="enteryouremailaddress">Ina barua pepe yako hapo chini kisha bofya kitufe cha "omba nenosiri"</string>
+    <string name="resetpasswordtext">Seti neno siri upya</string>
+    <string name="doyouwanttobacklogin">Je unahitaji kuingia tena?</string>
+    <string name="changepasswordemailsentemail">Ujumbe wa kubadili neno siri umetumwa kwenye barua pepe yako.</string>
+    <string name="enterconfirmpassworderror">Thibitisha nenosiri</string>
+    <string name="customercontactdetailstext">TAARIFA ZA MTEJA </string>
+    <string name="signedbysmall">Imesainiwa na</string>
+    <string name="namewithoutcolon">Jina</string>
+    <string name="pleasesigninhere">Tafadhali saini hapa</string>
+    <string name="clearbutton">FUTA</string>
+    <string name="savebutton">HIFADHI</string>
+    <string name="wrongpassworderror">Nenosiri ni batili</string>
+    <string name="newpassworderror">Ingiza neno siri jipya</string>
+
+    <string name="confirmpasswordrequirerror">Thibitisha nenosiri</string>
+    <string name="confirmpasswordincorrecterror">Thibitisho la ubatili wa nenosiri</string>
+    <string name="signaturetitle">Saini</string>
+    <string name="termsandconconditions">Vigezo na masharti</string>
+    <string name="firstnametext">Jina la kwanza </string>
+    <string name="numbertext">Nambari ya simu</string>
+    <string name="emailwithout">Anwani ya barua pepe</string>
+    <string name="vehiclenumvertext">Nambari ya chombo ch usafiri</string>
+    <string name="vehiclenametext">Jina la chombo cha usafiri</string>
+    <string name="vehicletypetext">Aina ya chombo cha usafiri</string>
+    <string name="savechangesbutton">TUNZA MABADILIKO</string>
+    <string name="myaccounttitle">Akaunti yangu</string>
+    <string name="chooseanactiondialog">Chagua kitendo</string>
+    <string name="namerequirederror">Jina linahitajika</string>
+    <string name="entervalidemailerror">Barua pepe haipo</string>
+    <string name="pleaseenterpassworderror">Neno siri</string>
+    <string name="enterpasswordmin">Neno siri linapaswa kuwa angalau herufi 6</string>
+    <string name="entermobilenumbererror">Nambari ya simu</string>
+    <string name="oldpasswordnotmatcherror">Nenosiri ni batili</string>
+    <string name="confirmpasswordnotmatched">Thibitisho la ubatili wa nenosiri</string>
+    <string name="invalidemail">Barua pepe haipo</string>
+    <string name="forgotyourtext">Je, unaoenda kubadili nenosiri?</string>
+    <string name="passwordquestion">Je, unataka kubadili nenosiri lako??</string>
+    <string name="backtextlogin">Je unahitaji kuingia tena?</string>
+    <string name="loginquestion">Ingia?</string>
+    <string name="alreadyongoingpackage">tayari kuna kifurushi kinayoendelea, je ungependa kuchagua kifurushi hii  kama kinayoendelea? </string>
+    <string name="startpackagedialog">Unataka kuanza kifurushi hiki? </string>
+    <string name="cancereasontext"> Sababu ya kubatilisha:  </string>
+    <string name="captureimagebutton">PIGA PICHA</string>
+    <string name="replacetext">BADILI</string>
+    <string name="phone_hint">Nambari ya simu </string>
+    <string name="wanttologout">Una hakika unataka kutoka? </string>
+    <string name="addressnotes">dokezo la anwani</string>
+    <string name="recurringtypecolonn">aina ya kujirudia :</string>
+    <string name="idcolon">MTEJA UTAMBULISHO :</string>
+    <string name="bookingidcolon">Utambulisho wa oda :</string>
+    <string name="bookingtimecap">Muda wa oda</string>
+    <string name="totalcolon">JUMLA YA MALIPO :  </string>
+    <string name="statuscolon">Hali :</string>
+    <string name="cancelpackagebutton">BATILISHA KIFURUSHI </string>
+    <string name="collectcashtext">KUSANYA FEDHA </string>
+    <string name="mobilenumbercolon">Nambari ya simu :</string>
+    <string name="packagedetailstext">MTEJA Maelezo ya mzigo</string>
+    <string name="pickupnotecolon">Maelekezo ya Kupakia :</string>
+    <string name="dropofftext">Shusha</string>
+    <string name="pickup_complete">" Chukuliwa \n Imekamilika"</string>
+    <string name="dropoff_complete">" Shusha \n Imekamilika"</string>
+    <string name="completedtextt">Imekamilika</string>
+    <string name="dropoffnotecolon">Maelezo ya ushushaji :</string>
+    <string name="cancelrequestdialog">Futa ombi </string>
+    <string name="mytripstext">Safari zangu </string>
+    <string name="languageSettingstext">Mazingira lugha </string>
+    <string name="languageDefault">Default </string>
+    <string name="languageSwahili">Swahili </string>
+    <string name="languageEnglish">English </string>
+    <string name="journeyfarecolon">malipo ya safari :</string>
+    <string name="fareadjustmentcolon">marekebisho ya malipo :</string>
+    <string name="newjourneyfarecolon">Malipo ya safari mpya :</string>
+    <string name="finalfarecolon">Malipo ya mwisho (Pungufu kwa 99.9% zaidi ya thamani ya awali) : </string>
+    <string name="vattext">Vat (18%) : </string>
+    <string name="ucctext">Ushuru wa UCC (2%) : </string>
+    <string name="warehousetext">Katika bohari</string>
+    <string name="packagetypedocother">aina ya mzigo(nyaraka/nyingine) :</string>
+    <string name="paymentdetailscap">Taarifa za malipo</string>
+    <string name="amountcolon">kiasi :</string>
+    <string name="methodcolon">Method :</string>
+    <string name="documentetxt">nyaraka</string>
+    <string name="othertext">nyingine</string>
+    <string name="signindialog">Ingia  </string>
+    <string name="morningtext">Asubuhi</string>
+    <string name="eveningtext">Jioni</string>
+    <string name="lastnametext">Jina la mwisho</string>
+    <string name="dailytext">Kila siku</string>
+    <string name="weeklytext">Kila wiki</string>
+    <string name="monthlytext">Kila mwezi</string>
+    <string name="rejectedtext">Imekataliwa na dereva</string>
+    <string name="deliveryfailuretext">Uwasilishaji umefeli</string>
+
+
+
+    <string name="checkroutebutton">Angalia Njia</string>
+    <string name="bookingidsmalll">Uhifadhi Utambulisho :</string>
+    <string name="alreadyamember">Tayari mwanachama? Ingia hapa</string>
+    <string name="newpassworddifferent">Nenosiri mpya lazima iwe tofauti</string>
+    <string name="retrytext">Jaribu tena </string>
+    <string name="alreadywaywarehouse">You are already on the way to warehouse, You can pick this package to warehouse along with current process.</string>
+    <string name="warehousedroppackage">You are already on the way to warehouse, You can drop this package to warehouse along with current process. </string>
+    <string name="onlinetext">walio mtandaoni </string>
+    <string name="offlinetext">Offline </string>
+    <string name="pleasetryagain">Tafadhali jaribu tena </string>
+    <string name="godeldrivertitle">Godel Driver </string>
+    <string name="my_qr_code">Wangu QR Msimbo</string>
+    <string name="godelAgenttitle">Godel Agent </string>
+    <string name="connectingtext">Kuunganisha </string>
+    <string name="packagepaymentisincomplete">Package payment is incomplete, please pay before proceed. </string>
+    <string name="offlineconfirmation">Offline uthibitisho </string>
+    <string name="reallywantoffline">Really want to go offline ? </string>
+    <string name="assigningstickertext">assigning sticker </string>
+    <string name="loadingtext">Inapakia </string>
+    <string name="gettingdetailsdialog">Getting details </string>
+    <string name="accountisloginanotherr">This account is login in another device </string>
+    <string name="closeapptext">Restart app </string>
+    <string name="nonoteavailable">No note available</string>
+    <string name="deliverynotecolon">Delivery Note :</string>
+    <string name="viewmoretext">View more</string>
+    <string name="recurringpickuypanddelivery">Recurring Pickup and Delivery Timing</string>
+    <string name="pickuptimecolon">Pickup Timing :</string>
+    <string name="packageisalreadycompleted">Package is already completed</string>
+    <string name="pickuppackage">Pickup Package</string>
+    <string name="scantext">Skani</string>
+    <string name="scan">skana</string>
+    <string name="scan_again">Skana Tena</string>
+    <string name="navigationtext">Navigation</string>
+    <string name="waitingtext">Kusubiri</string>
+    <string  name="default_notification_channel_id">my_channel_01</string>
+    <string name="currencysymbol"> UGX </string>
+    <string name="doyourealluwantto">Do you really want to proceed with</string>
+    <string name="mincharactersrequired">Min 6 characters required</string>
+    <string name="resettingpassworddialog">Kurejesha nenosiri</string>
+    <string name="passwordchangeddialog">Nenosiri limebadilika</string>
+    <string name="passwordrequiredfurther">Permission required to proceed further</string>
+    <string name="allowpemissionstext">Allow permissions</string>
+    <string name="loadingpackages">Loading Packages</string>
+    <string name="usernametext">Jina la Mtumiaji</string>
+    <string name="nopickupaddressnote">No pickup address note found</string>
+    <string name="nodeliveryaddressnote">No delivery address note found</string>
+    <string name="dropoffcompletebutton">Drop off Complete </string>
+    <string name="firstrounddropoffcompletebutton">First Round Complete </string>
+    <string name="completepickupbutton">Complete Pickup </string>
+    <string name="dropoffwarehousebutton">Drop off WareHouse </string>
+    <string name="wanttocaptureproofimage">Want to capture proof image of pickup? </string>
+    <string name="updatingpackagedialog">Updating package </string>
+    <string name="gettingpackagedetailsdialog">Getting package details </string>
+    <string name="pleaseretrytext">Please Retry </string>
+    <string name="downloadedlabelstitle">Downloaded Labels</string>
+    <string name="nolabelsfoundtext">No Labels Found</string>
+    <string name="passwordshouldmatcherror">Password should match</string>
+    <string name="faredetailscolon">FARE DETAILS</string>
+    <string name="nofaredetailsavailaible">No fare details available</string>
+    <string name="paidamountcolon">Ilipwa Kiasi :  </string>
+    <string name="pendingamountcolon">Inasubiri Kiasi :  </string>
+    <string name="passwordchangedlogin">Your password has been successfully updated. You can login with your new passsword.</string>
+    <string name="passwordresetsuccessfully">Password Reset Successfully</string>
+    <string name="sendingresetlinktextt">sending reset link</string>
+    <string name="enterverificationcode">Enter verification code</string>
+    <string name="retypepasswordcode">Retype password</string>
+    <string name="proceesingdialog">Usindikaji</string>
+    <string name="advancetext">Advance : </string>
+    <string name="acceptedtext">Imekubaliwa </string>
+    <string name="pendingtext">Inasubiri</string>
+    <string name="assignedtext">Assigned</string>
+    <string name="arrivingtext">Arriving</string>
+    <string name="arrivedtext">Imefika</string>
+    <string name="starttext">Anza</string>
+    <string name="inprogresstext">In Progress</string>
+    <string name="waitingbeforetext">Waiting before delivery</string>
+    <string name="packagealreadysetongoing">Package already set as OnGoing package</string>
+    <string name="calculatingfinaslfare">Calculating final fare</string>
+    <string name="cardpayment">Kadi</string>
+    <string name="walletpayment">Wallet</string>
+
+    <string name="scan_drivers_qrcode">Scan Driver\'s QR code</string>
+
+</resources>
+

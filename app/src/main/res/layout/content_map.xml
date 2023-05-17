@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_btns">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.driver.godel.activities.MapsActivity" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fab_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@color/whiteColor"
+            app:srcCompat="@drawable/ic_gps_fixed"
+            app:backgroundTint="@color/whiteColor"
+            app:elevation="1dp"
+            app:fabSize="mini" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/startColor"
+            android:text="Arrival"
+            android:textColor="@color/whiteColor" />
+
+        <Button
+            android:id="@+id/btn_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/startColor"
+            android:text="Waiting"
+            android:textColor="@color/whiteColor"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_start_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/startColor"
+            android:text="Start Ride"
+            android:textColor="@color/whiteColor"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_stop_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_start_trip"
+            android:background="@color/endColor"
+            android:text="Stop Ride"
+            android:textColor="@color/whiteColor"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

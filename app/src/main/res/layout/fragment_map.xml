@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_btns">
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <!--<ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/shape_circle"
+        android:padding="@dimen/dimen_2"
+        android:src="@drawable/ic_close" />-->
+
+<!--    <android.support.v7.widget.CardView
+        android:id="@+id/cv_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_50"
+        map:cardCornerRadius="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"
+                    android:textColor="@color/pickupColor"
+                    android:textSize="@dimen/font_small" />
+
+                <ImageView
+                    android:id="@+id/iv_pickup"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_1"
+                    android:src="@drawable/ic_pickup_rectangle" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_2"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="@color/viewColor" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_8"
+                    android:layout_height="@dimen/dimen_8"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_1"
+                    android:src="@drawable/ic_dropoff_rectangle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dropoff"
+                    android:textColor="@color/dropoffColor"
+                    android:textSize="@dimen/font_small" />
+
+            </LinearLayout>
+
+           &lt;!&ndash; <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_pickup_address"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:paddingLeft="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/iv_pickup_drop"
+                    android:maxLines="1"
+                    android:text="Pickup Location"
+                    android:textColor="@color/pickupColor" />
+
+                <View
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@color/viewColor"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"/>
+
+
+                <TextView
+                    android:id="@+id/tv_drop_off_address"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:paddingLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/iv_pickup_drop"
+                    android:maxLines="1"
+                    android:textColor="@color/dropoffColor"
+                    android:text="Dropoff Location" />
+
+
+            </LinearLayout>&ndash;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+       &lt;!&ndash; <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_pickup_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dimen_10"
+                android:src="@drawable/ic_cars" />
+
+            <TextView
+                android:id="@+id/tv_pickup_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/iv_pickup_drop"
+                android:maxLines="1"
+                android:text="Pickup Location"
+                android:textColor="@color/pickupColor" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/tv_pickup"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/iv_pickup_drop"
+                android:background="@color/viewColor" />
+
+            <TextView
+                android:id="@+id/tv_drop_off_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_pickup_drop"
+                android:maxLines="1"
+                android:text="Drop off Location"
+                android:textColor="@color/dropoffColor" />
+
+        </RelativeLayout>&ndash;&gt;
+
+    </android.support.v7.widget.CardView>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_btns"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@color/whiteColor"
+        app:srcCompat="@drawable/ic_gps_fixed"
+        app:backgroundTint="@color/whiteColor"
+        app:elevation="1dp"
+        app:fabSize="mini" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_arrival"
+            android:text="Arrival"
+            android:visibility="gone"
+            android:textColor="@color/whiteColor"
+            android:background="@color/startColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_waiting"
+            android:text="Waiting"
+            android:visibility="gone"
+            android:textColor="@color/whiteColor"
+            android:background="@color/startColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_start_trip"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/startColor"
+            android:text="Start Ride"
+            android:textColor="@color/whiteColor" />
+
+        <Button
+            android:id="@+id/btn_stop_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_start_trip"
+            android:background="@color/endColor"
+            android:text="Stop Ride"
+            android:textColor="@color/whiteColor"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

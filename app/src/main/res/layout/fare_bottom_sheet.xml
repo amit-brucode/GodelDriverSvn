@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_fare_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#50000000"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="300dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_fare"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        app:cardCornerRadius="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_fare"
+                android:padding="@dimen/dimen_10"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_total_fare"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fare :"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_fare"
+                    android:text="2000"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/slidingBorderColor"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"/>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/button_done_fare"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:textColor="@color/whiteColor"
+                android:text="DONE"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_large"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

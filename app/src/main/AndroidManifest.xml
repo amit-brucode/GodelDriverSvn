@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.driver.godel">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+<!--    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+    <application
+        android:name=".RefineCode.GodelDriverApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".RefineCode.RefineActivities.Splash"
+            android:configChanges="locale|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- &lt;!&ndash; SignIn Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.SignInActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+
+
+        <!-- &lt;!&ndash; HomeScreen Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MyPackages1" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|adjustPan"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="MyPackagesActivity" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- &lt;!&ndash; Location Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.LocationOff" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Permission Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.Permission" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Help Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.HelpActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Account Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.UserAccountActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+
+
+        <!-- &lt;!&ndash; Forgot Password Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.ForgotPasswordActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+
+
+        <!-- &lt;!&ndash; Booking Detail Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.BookingDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Terms & Conditions Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.TermsConditionsActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Privacy Policy Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.PrivacyPolicyActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; About Us Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.AboutUsActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Setting Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".fragments.SettingsActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; History Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".fragments.HistoryActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Notification Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.NotificationDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Maps Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MapsActivity" -->
+        <!-- android:fitsSystemWindows="true" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Signature Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.SignatureActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; My Packages Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.HistoryActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Verification Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.VerificationActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Send Crash Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.SendCrashEmail" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; Barcode Scanner Activity &ndash;&gt; -->
+        <!-- <activity android:name=".activities.BarcodeScannerActivity" /> -->
+
+
+        <!-- &lt;!&ndash; Package Detail Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.GetPackageDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- &lt;!&ndash; PDF List Activity &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".activities.PdfListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activities.ChangePasswordActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activities.DropOffFaliureActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+
+        <activity
+            android:name=".RefineCode.RefineActivities.MyPackagesActivity"
+            android:configChanges="locale|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RefineCode.RefineActivities.GetPackageDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.DropOffFailureActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.SignatureActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RefineCode.RefineActivities.MapsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.PrivacyPolicyActivityNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.AboutUsActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.TermsConditionsActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.PdfListActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.HistoryActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.BookingDetailActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.LocationOff"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.CheckPermissions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.LocationOffGPSOff"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.UserAccountActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.ChangePasswordActivityNew"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RefineCode.RefineActivities.ForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendCrashEmail"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RefineCode.RefineActivities.SignIn"
+            android:configChanges="locale|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:exported="true"
+            tools:replace="screenOrientation" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b42a4467eba3b44cad536f2ff715f036bc9eeb0c" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".notifications.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".RefineCode.Service.ForegroundService"
+            android:enabled="true"
+            android:exported="true"/>
+        <!-- <service -->
+        <!-- android:name=".Services.UpdateDriverLocationService" -->
+        <!-- android:stopWithTask="false" /> -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <receiver android:name=".LocaleChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".RefineCode.Service.UpdateDriverLocationServiceNew"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process="com.hashedin.processname"
+            android:stopWithTask="false" />
+<!--            android:foregroundServiceType="location"-->
+<!--            android:stopWithTask="false" />-->
+
+        <activity
+            android:name=".RefineCode.RefineActivities.Selected_Country"
+            android:configChanges="locale|orientation"
+            android:exported="true" />
+
+        <activity android:name=".RefineCode.RefineActivities.LanguageSettings"
+            android:exported="true" />
+
+        <activity android:name=".RefineCode.RefineActivities.QrCodeActivity"
+            android:exported="true" />
+
+        <activity android:name=".RefineCode.RefineActivities.PassPackageActivity"
+            android:exported="true" />
+
+        <activity android:name=".RefineCode.RefineActivities.GetPackageDetailScanActivity"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

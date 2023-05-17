@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F1F4F8"
+    >
+
+    <!--<include-->
+        <!--android:id="@+id/toolbar"-->
+        <!--layout="@layout/toolbar" />-->
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/swipeRefreshLayout"
+         android:layout_below="@+id/toolbar"
+         android:layout_above="@+id/rl_load_more"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">-->
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_load_more"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="vertical" />
+
+    <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <TextView
+        android:id="@+id/tv_no_history"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No History Available"
+        android:textColor="@color/pickup_dropOff_address"
+        android:textSize="@dimen/font_large" />
+
+    <!-- Load More.. -->
+    <RelativeLayout
+        android:id="@+id/rl_load_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/rl_connection"
+        android:layout_toRightOf="@+id/rl_connection"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:text="Load more"
+            android:visibility="visible"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_reLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/tv_more"
+            app:srcCompat="@drawable/ic_refresh" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Connection Error!"
+            android:textAlignment="center"
+            android:textColor="#7e7e7e"
+            android:textSize="@dimen/font_large" />
+
+        <Button
+            android:id="@+id/btn_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_below="@+id/tv_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/colorPrimary"
+            android:text="Try Again"
+            android:textColor="@color/whiteColor" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

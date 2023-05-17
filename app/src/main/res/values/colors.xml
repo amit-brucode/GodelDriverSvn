@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1072bc</color>
+    <color name="colorPrimaryDark">#086ab3</color>
+    <color name="colorAccent">#42A5F5</color>
+
+    <!--ToolBar Color-->
+    <color name="toolbarBackground">#9E9E9E</color>
+    <color name="whiteColor">#FFF</color>
+    <color name="blackColor">#000</color>
+    <color name="darkGrey">#bdbdbd</color>
+    <color name="hintColor">#d3d3d3</color>
+
+    <color name="viewColor">#d3d3d3</color>
+    <color name="windowColor">#f1f1f1</color>
+
+    <!-- Map view Fragment-->
+    <color name="pickupColor">#21c968</color>
+    <color name="dropoffColor">#0971ce</color>
+
+    <color name="startColor">#035ea2</color>
+    <color name="endColor">#e74c3c</color>
+    <color name="callColor">#00b200</color>
+
+    <color name="pickup_dropOff_address">#545454</color>
+    <color name="date_time">#939393</color>
+    <color name="circleColor">#6b37438f</color>
+    <color name="textColorValue">#939393</color>
+
+    <color name="titleFontColor">#979797</color>
+
+
+    <!-- Sliding Drawer-->
+    <color name="slidingFontColor">#616161</color>
+    <color name="slidingBorderColor">#ebebeb</color>
+    <color name="buttonColor">#F18E2F</color>
+    <color name="completedColor">#00A759</color>
+
+
+
+
+
+
+</resources>

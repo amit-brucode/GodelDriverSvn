@@ -1,0 +1,9 @@
+<resources><!-- <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDdJDyUtxRvtRrSoudkOrIKhdWTcDWE2YI
+    </string>-->
+
+    <!-- New Key Update -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDacOKLJZurj_XSqT-1IbQtIybfM58-KsA
+    </string>
+</resources>

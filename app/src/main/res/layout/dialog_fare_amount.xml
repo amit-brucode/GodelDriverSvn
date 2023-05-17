@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@drawable/fare_dailog_corner"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_fare"
+            android:padding="@dimen/dimen_10"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_total_fare"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Fare"
+                android:gravity="center_vertical"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_fare"
+                android:text="2000"
+
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_larger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/slidingBorderColor"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"/>
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/button_done_fare"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:textColor="@color/whiteColor"
+            android:text="DONE"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_large"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40" />
+
+    </LinearLayout>
+
+</LinearLayout>

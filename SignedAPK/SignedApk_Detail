@@ -1,0 +1,14 @@
+key store path: -
+/home/local/QSYS/simarjot.singh/Documents/All Projects/Godel_Driver_SVN_New/SignedAPK/Godel_Driver.jks
+
+new keystore_path:-
+/home/local/QSYS/simarjot.singh/Documents/All Projects/Godel_Driver_SVN_New_V2/SignedAPK/Godel_Driver.jks
+
+key store password:-
+123456
+
+key alias: -
+GodelDriver
+
+key password: -
+123456

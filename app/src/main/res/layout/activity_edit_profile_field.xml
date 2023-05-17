@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/whiteColor"
+                card_view:cardCornerRadius="6dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_driver_unique_id">
+
+                        <TextView
+                            android:id="@+id/tv_Name_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="First Name"
+                            android:textColorHint="@color/blackColor"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="140dp" />
+
+                        <LinearLayout
+                            android:id="@+id/rl_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dark_outline_with_white_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                app:srcCompat="@drawable/username" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/blackColor"></View>
+
+                            <EditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_30"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:hint="Name"
+                                android:maxLength="30"
+                                android:text=""
+                                android:textColor="@color/blackColor"
+                                android:textSize="15sp" />
+
+                            <ImageButton
+                                android:id="@+id/ib_edit_name"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/edit"
+                                android:padding="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_lst_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_name"
+                        tools:layout_editor_absoluteX="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Last Name"
+                            android:textColorHint="@color/blackColor"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="140dp" />
+
+                        <LinearLayout
+                            android:id="@+id/rl_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dark_outline_with_white_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                app:srcCompat="@drawable/username" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/blackColor"></View>
+
+                            <EditText
+                                android:id="@+id/tv_lastnamevalue"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_30"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:hint="Last Name"
+                                android:maxLength="30"
+                                android:text=""
+                                android:textColor="@color/blackColor"
+                                android:textSize="15sp" />
+                            ♠
+
+                            <ImageButton
+                                android:id="@+id/ib_edit_last_name"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/edit"
+                                android:padding="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_lst_name">
+
+                        <TextView
+                            android:id="@+id/tv_mobile_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone Number"
+                            android:textColorHint="@color/blackColor"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/rl_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dark_outline_with_white_bg"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                app:srcCompat="@drawable/ic_phone_android" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/blackColor" />
+
+                            <EditText
+                                android:id="@+id/et_mobile_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_30"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:digits="1234567890+"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:hint="Number"
+                                android:inputType="phone"
+                                android:maxLength="20"
+                                android:text=""
+                                android:textColor="@color/blackColor"
+                                android:textSize="15sp" />
+
+                            <ImageButton
+                                android:id="@+id/ib_edit_mobile"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/edit" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_phone"
+                        tools:layout_editor_absoluteX="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_email_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email Address"
+                            android:textColorHint="@color/blackColor"
+                            android:textSize="14sp"
+
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="280dp" />
+
+                        <LinearLayout
+                            android:id="@+id/rl_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dark_outline_with_white_bg"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="560dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                app:srcCompat="@drawable/ic_mail_outline" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/blackColor"></View>
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_30"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:digits="1234567890+"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:hint="Email"
+                                android:inputType="phone"
+                                android:maxLength="50"
+                                android:text=""
+                                android:textColor="@color/blackColor"
+                                android:textSize="15sp" />
+
+                            <ImageButton
+                                android:id="@+id/ib_edit_email"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/edit"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_email"
+                        tools:layout_editor_absoluteX="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:textColorHint="@color/blackColor"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="140dp" />
+
+                        <LinearLayout
+                            android:id="@+id/rl_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dark_outline_with_white_bg"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                app:srcCompat="@drawable/password" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/blackColor"></View>
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dimen_30"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:inputType="textPassword"
+                                android:text="12345"
+                                android:textColor="@color/blackColor"
+                                android:textSize="15sp" />
+
+                            <ImageButton
+                                android:id="@+id/ib_edit_password"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/edit"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ll_password"
+                                app:layout_constraintTop_toTopOf="@+id/ll_password" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/package_options_bg"
+                android:text="SAVE CHANGES"
+                android:textColor="@color/whiteColor"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

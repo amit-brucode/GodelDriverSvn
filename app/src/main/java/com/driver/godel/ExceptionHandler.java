@@ -15,7 +15,6 @@ import com.driver.godel.RefineCode.RefineUtils.SharedValues;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-
 public class ExceptionHandler extends Throwable implements Thread.UncaughtExceptionHandler {
     private final Context myContext;
     private final String LINE_SEPARATOR = "\n";
